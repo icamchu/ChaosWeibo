@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D721B8EDC360015CB8B /* WeiboCell.xib */; settings = {ASSET_TAGS = (); }; };
 		32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC971B8DC3B10054881D /* AppDelegate.swift */; };
 		32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC991B8DC3B10054881D /* ViewController.swift */; };
 		32A4AC9D1B8DC3B10054881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9B1B8DC3B10054881D /* Main.storyboard */; };
@@ -14,7 +16,7 @@
 		32A4ACA21B8DC3B10054881D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */; };
 		32A4ACAD1B8DC3B20054881D /* ChaosWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACAC1B8DC3B20054881D /* ChaosWeiboTests.swift */; };
 		32A4ACB81B8DC3B20054881D /* ChaosWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */; };
-		49F3C5A3504EEE26626BBC4F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E18ABAB4564B63E25EA7869 /* libPods.a */; };
+		F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE40E505B6123366E02216F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboListViewController.xib; sourceTree = "<group>"; };
+		329A9D721B8EDC360015CB8B /* WeiboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboCell.xib; sourceTree = "<group>"; };
 		32A4AC941B8DC3B10054881D /* ChaosWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4AC971B8DC3B10054881D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A4AC991B8DC3B10054881D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +52,7 @@
 		32A4ACB31B8DC3B20054881D /* ChaosWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaosWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosWeiboUITests.swift; sourceTree = "<group>"; };
 		32A4ACB91B8DC3B20054881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E18ABAB4564B63E25EA7869 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEE40E505B6123366E02216F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF016D0B31AD4CB88436C3CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D9D4BCBC799F412B30C6A6FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F3C5A3504EEE26626BBC4F /* libPods.a in Frameworks */,
+				F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		329A9D6D1B8EDB350015CB8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32A4AC991B8DC3B10054881D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		329A9D6E1B8EDB3F0015CB8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		329A9D6F1B8EDB450015CB8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		329A9D701B8EDB5E0015CB8B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				329A9D741B8EDC820015CB8B /* Cells */,
+				32A4AC9B1B8DC3B10054881D /* Main.storyboard */,
+				329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */,
+				329A9D721B8EDC360015CB8B /* WeiboCell.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		329A9D711B8EDBCD0015CB8B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				32A4AC971B8DC3B10054881D /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		329A9D741B8EDC820015CB8B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		32A4AC8B1B8DC3B10054881D = {
 			isa = PBXGroup;
 			children = (
@@ -104,11 +157,12 @@
 		32A4AC961B8DC3B10054881D /* ChaosWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				32A4AC971B8DC3B10054881D /* AppDelegate.swift */,
-				32A4AC991B8DC3B10054881D /* ViewController.swift */,
-				32A4AC9B1B8DC3B10054881D /* Main.storyboard */,
+				329A9D711B8EDBCD0015CB8B /* App */,
+				329A9D6E1B8EDB3F0015CB8B /* Model */,
+				329A9D6F1B8EDB450015CB8B /* View */,
+				329A9D6D1B8EDB350015CB8B /* Controller */,
+				329A9D701B8EDB5E0015CB8B /* UI */,
 				32A4AC9E1B8DC3B10054881D /* Assets.xcassets */,
-				32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */,
 				32A4ACA31B8DC3B10054881D /* Info.plist */,
 			);
 			path = ChaosWeibo;
@@ -144,7 +198,7 @@
 		E3B47FB25A21E40BDE0CAC68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E18ABAB4564B63E25EA7869 /* libPods.a */,
+				AEE40E505B6123366E02216F /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +215,7 @@
 				32A4AC911B8DC3B10054881D /* Frameworks */,
 				32A4AC921B8DC3B10054881D /* Resources */,
 				8B84F2315A29D97C947BD48E /* Copy Pods Resources */,
+				C46BC5698DE0B198BA180213 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A4ACA21B8DC3B10054881D /* LaunchScreen.storyboard in Resources */,
+				329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */,
+				329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */,
 				32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */,
 				32A4AC9D1B8DC3B10054881D /* Main.storyboard in Resources */,
 			);
@@ -305,6 +362,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46BC5698DE0B198BA180213 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
