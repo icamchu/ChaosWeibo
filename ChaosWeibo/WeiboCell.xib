@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="ecL-Cc-DRq">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecL-Cc-DRq" id="auy-4m-3Zj">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HgH-w8-bia">
+                        <rect key="frame" x="20" y="17" width="65" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HgH-w8-bia" secondAttribute="height" multiplier="13:12" id="aSg-hS-V40"/>
+                            <constraint firstAttribute="width" constant="65" id="fVE-az-6KN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ng-6u-uFJ">
+                        <rect key="frame" x="93" y="19" width="258" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="57" id="dhB-SZ-isa"/>
+                            <constraint firstAttribute="width" secondItem="0Ng-6u-uFJ" secondAttribute="height" multiplier="86:19" id="jCz-MD-NKy"/>
+                            <constraint firstAttribute="width" constant="258" id="xVn-AF-My1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dhB-SZ-isa"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HgH-w8-bia" firstAttribute="top" secondItem="auy-4m-3Zj" secondAttribute="topMargin" constant="9" id="FFN-V5-Vqw"/>
+                    <constraint firstItem="0Ng-6u-uFJ" firstAttribute="leading" secondItem="HgH-w8-bia" secondAttribute="leading" constant="73" id="TDF-HG-gu5"/>
+                    <constraint firstItem="0Ng-6u-uFJ" firstAttribute="centerY" secondItem="HgH-w8-bia" secondAttribute="centerY" id="TPe-WW-FWt"/>
+                    <constraint firstItem="0Ng-6u-uFJ" firstAttribute="leading" secondItem="HgH-w8-bia" secondAttribute="trailing" constant="8" id="ZU5-1T-bg0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HgH-w8-bia" secondAttribute="bottom" constant="14" id="bHF-1I-uAK"/>
+                    <constraint firstItem="HgH-w8-bia" firstAttribute="leading" secondItem="auy-4m-3Zj" secondAttribute="leadingMargin" constant="12" id="nyl-OB-I9C"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="TDF-HG-gu5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="333" y="297"/>
+        </tableViewCell>
+    </objects>
+</document>
