@@ -13,7 +13,6 @@
 		32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC991B8DC3B10054881D /* ViewController.swift */; };
 		32A4AC9D1B8DC3B10054881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9B1B8DC3B10054881D /* Main.storyboard */; };
 		32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9E1B8DC3B10054881D /* Assets.xcassets */; };
-		32A4ACA21B8DC3B10054881D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */; };
 		32A4ACAD1B8DC3B20054881D /* ChaosWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACAC1B8DC3B20054881D /* ChaosWeiboTests.swift */; };
 		32A4ACB81B8DC3B20054881D /* ChaosWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */; };
 		F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE40E505B6123366E02216F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -39,12 +38,13 @@
 /* Begin PBXFileReference section */
 		329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboListViewController.xib; sourceTree = "<group>"; };
 		329A9D721B8EDC360015CB8B /* WeiboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboCell.xib; sourceTree = "<group>"; };
+		329A9D771B8EE4C40015CB8B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		329A9D781B8F12740015CB8B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		32A4AC941B8DC3B10054881D /* ChaosWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4AC971B8DC3B10054881D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A4AC991B8DC3B10054881D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32A4AC9C1B8DC3B10054881D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32A4AC9E1B8DC3B10054881D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		32A4ACA11B8DC3B10054881D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A4ACA31B8DC3B10054881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A4ACA81B8DC3B20054881D /* ChaosWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaosWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4ACAC1B8DC3B20054881D /* ChaosWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosWeiboTests.swift; sourceTree = "<group>"; };
@@ -108,10 +108,10 @@
 		329A9D701B8EDB5E0015CB8B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				32A4AC9E1B8DC3B10054881D /* Assets.xcassets */,
 				329A9D741B8EDC820015CB8B /* Cells */,
 				32A4AC9B1B8DC3B10054881D /* Main.storyboard */,
 				329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */,
-				329A9D721B8EDC360015CB8B /* WeiboCell.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 		329A9D711B8EDBCD0015CB8B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				32A4AC971B8DC3B10054881D /* AppDelegate.swift */,
+				329A9D781B8F12740015CB8B /* Constants.h */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -127,9 +127,25 @@
 		329A9D741B8EDC820015CB8B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */,
+				329A9D721B8EDC360015CB8B /* WeiboCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		329A9D751B8EE1480015CB8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		329A9D761B8EE1590015CB8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				329A9D771B8EE4C40015CB8B /* Header.h */,
+				32A4ACA31B8DC3B10054881D /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		32A4AC8B1B8DC3B10054881D = {
@@ -157,13 +173,14 @@
 		32A4AC961B8DC3B10054881D /* ChaosWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				32A4AC971B8DC3B10054881D /* AppDelegate.swift */,
 				329A9D711B8EDBCD0015CB8B /* App */,
+				329A9D761B8EE1590015CB8B /* Supporting Files */,
+				329A9D751B8EE1480015CB8B /* Resources */,
 				329A9D6E1B8EDB3F0015CB8B /* Model */,
 				329A9D6F1B8EDB450015CB8B /* View */,
 				329A9D6D1B8EDB350015CB8B /* Controller */,
 				329A9D701B8EDB5E0015CB8B /* UI */,
-				32A4AC9E1B8DC3B10054881D /* Assets.xcassets */,
-				32A4ACA31B8DC3B10054881D /* Info.plist */,
 			);
 			path = ChaosWeibo;
 			sourceTree = "<group>";
@@ -309,7 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32A4ACA21B8DC3B10054881D /* LaunchScreen.storyboard in Resources */,
 				329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */,
 				329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */,
 				32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */,
@@ -431,14 +447,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		32A4ACA01B8DC3B10054881D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32A4ACA11B8DC3B10054881D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -534,6 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cam.zhu.ChaosWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ChaosWeibo/Header.h;
 			};
 			name = Debug;
 		};
@@ -546,6 +555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cam.zhu.ChaosWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = ChaosWeibo/Header.h;
 			};
 			name = Release;
 		};

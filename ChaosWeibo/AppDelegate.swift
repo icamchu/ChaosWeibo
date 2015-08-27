@@ -7,15 +7,24 @@
 //
 
 import UIKit
+let kAppKey:String = "2582352523"
+let kRedirectURL:String  = "https://api.weibo.com/oauth2/default.html"
+
+public var wbtoken: NSString?
+public var wbCurrentUserID:NSString?
+public var wbRefreshToken:NSString?
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,WeiboSDKDelegate {
 
     var window: UIWindow?
 
 
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        WeiboSDK.enableDebugMode(true)
+        WeiboSDK.registerApp(kAppKey)
         return true
     }
 
@@ -40,7 +49,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return WeiboSDK.handleOpenURL(url, delegate:self)
+    }
+    
+    func didReceiveWeiboRequest(request: WBBaseRequest!) {
+        
+    }
+    
+    func didReceiveWeiboResponse(response: WBBaseResponse!) {
+        let authorizeResponse = (response as! WBAuthorizeResponse);
+        wbtoken = authorizeResponse.accessToken
+        wbCurrentUserID = authorizeResponse.userID
+        wbRefreshToken = authorizeResponse.refreshToken
+    }
+    
 }
 
