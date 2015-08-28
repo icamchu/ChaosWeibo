@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             "Other_Info_3": ["key1": "obj1", "key2": "obj2"]
         ]
         WeiboSDK.sendRequest(request);
-        wbtoken = ""
     }
 }
 

@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="ecL-Cc-DRq">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeiboCell" rowHeight="95" id="ecL-Cc-DRq" customClass="WeiboCell" customModule="ChaosWeibo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ecL-Cc-DRq" id="auy-4m-3Zj">
@@ -30,7 +30,7 @@
                             <constraint firstAttribute="width" constant="258" id="xVn-AF-My1"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="default">
                             <mask key="constraints">
@@ -53,6 +53,7 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96961805560000003" green="0.37693838470000002" blue="0.17047583090000001" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="333" y="297"/>
         </tableViewCell>
     </objects>

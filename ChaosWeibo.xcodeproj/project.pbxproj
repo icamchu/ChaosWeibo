@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32236EE81B902CCC0060E2B9 /* WeiboCell.swift */; settings = {ASSET_TAGS = (); }; };
 		329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D721B8EDC360015CB8B /* WeiboCell.xib */; settings = {ASSET_TAGS = (); }; };
 		32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC971B8DC3B10054881D /* AppDelegate.swift */; };
@@ -15,6 +16,8 @@
 		32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9E1B8DC3B10054881D /* Assets.xcassets */; };
 		32A4ACAD1B8DC3B20054881D /* ChaosWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACAC1B8DC3B20054881D /* ChaosWeiboTests.swift */; };
 		32A4ACB81B8DC3B20054881D /* ChaosWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */; };
+		32A711401B8FFB9900799861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7113F1B8FFB9900799861 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		32A711421B90001300799861 /* WeiboListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A711411B90001300799861 /* WeiboListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE40E505B6123366E02216F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32236EE81B902CCC0060E2B9 /* WeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCell.swift; sourceTree = "<group>"; };
 		329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboListViewController.xib; sourceTree = "<group>"; };
 		329A9D721B8EDC360015CB8B /* WeiboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboCell.xib; sourceTree = "<group>"; };
 		329A9D771B8EE4C40015CB8B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		329A9D781B8F12740015CB8B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		32A4AC941B8DC3B10054881D /* ChaosWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaosWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4AC971B8DC3B10054881D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A4AC991B8DC3B10054881D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 		32A4ACB31B8DC3B20054881D /* ChaosWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaosWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaosWeiboUITests.swift; sourceTree = "<group>"; };
 		32A4ACB91B8DC3B20054881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A7113F1B8FFB9900799861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		32A711411B90001300799861 /* WeiboListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboListViewController.swift; sourceTree = "<group>"; };
 		AEE40E505B6123366E02216F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF016D0B31AD4CB88436C3CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D9D4BCBC799F412B30C6A6FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				32A4AC991B8DC3B10054881D /* ViewController.swift */,
+				32A711411B90001300799861 /* WeiboListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -101,6 +107,7 @@
 		329A9D6F1B8EDB450015CB8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				32236EE81B902CCC0060E2B9 /* WeiboCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -119,7 +126,7 @@
 		329A9D711B8EDBCD0015CB8B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				329A9D781B8F12740015CB8B /* Constants.h */,
+				32A7113F1B8FFB9900799861 /* Constants.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -402,8 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */,
 				32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */,
+				32A711421B90001300799861 /* WeiboListViewController.swift in Sources */,
 				32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */,
+				32A711401B8FFB9900799861 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

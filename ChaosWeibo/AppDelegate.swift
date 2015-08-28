@@ -10,9 +10,9 @@ import UIKit
 let kAppKey:String = "2582352523"
 let kRedirectURL:String  = "https://api.weibo.com/oauth2/default.html"
 
-public var wbtoken: NSString?
-public var wbCurrentUserID:NSString?
-public var wbRefreshToken:NSString?
+//public var wbtoken: NSString?
+//public var wbCurrentUserID:NSString?
+//public var wbRefreshToken:NSString?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,WeiboSDKDelegate {
@@ -63,6 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WeiboSDKDelegate {
         wbtoken = authorizeResponse.accessToken
         wbCurrentUserID = authorizeResponse.userID
         wbRefreshToken = authorizeResponse.refreshToken
+        let vc = WeiboListViewController(style: .Plain)
+        self.window?.rootViewController = UINavigationController(rootViewController: vc)
+        
+//        self.window?.rootViewController = WeiboListViewController.init
+        
     }
     
 }

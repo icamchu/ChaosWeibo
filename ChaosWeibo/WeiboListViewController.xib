@@ -4,14 +4,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeiboListViewController" customModule="ChaosWeibo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="O0n-lU-oNU" id="ILC-W9-ako"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O0n-lU-oNU">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="419" y="419"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="MFh-GR-MA5"/>
+                <outlet property="delegate" destination="-1" id="djY-Gq-lsx"/>
+            </connections>
+            <point key="canvasLocation" x="403.5" y="415.5"/>
         </tableView>
     </objects>
 </document>
