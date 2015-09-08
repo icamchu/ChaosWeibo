@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32236EE81B902CCC0060E2B9 /* WeiboCell.swift */; settings = {ASSET_TAGS = (); }; };
-		329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D721B8EDC360015CB8B /* WeiboCell.xib */; settings = {ASSET_TAGS = (); }; };
+		3203946C1B96C1C300DC6644 /* WeiboDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203946B1B96C1C300DC6644 /* WeiboDatabase.swift */; };
+		32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32236EE81B902CCC0060E2B9 /* WeiboCell.swift */; };
+		326127311B970398008CC93D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326127301B970398008CC93D /* Pods.framework */; };
+		329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */; };
+		329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D721B8EDC360015CB8B /* WeiboCell.xib */; };
 		32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC971B8DC3B10054881D /* AppDelegate.swift */; };
 		32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4AC991B8DC3B10054881D /* ViewController.swift */; };
 		32A4AC9D1B8DC3B10054881D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9B1B8DC3B10054881D /* Main.storyboard */; };
 		32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A4AC9E1B8DC3B10054881D /* Assets.xcassets */; };
 		32A4ACAD1B8DC3B20054881D /* ChaosWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACAC1B8DC3B20054881D /* ChaosWeiboTests.swift */; };
 		32A4ACB81B8DC3B20054881D /* ChaosWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4ACB71B8DC3B20054881D /* ChaosWeiboUITests.swift */; };
-		32A711401B8FFB9900799861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7113F1B8FFB9900799861 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
-		32A711421B90001300799861 /* WeiboListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A711411B90001300799861 /* WeiboListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE40E505B6123366E02216F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		32A711401B8FFB9900799861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7113F1B8FFB9900799861 /* Constants.swift */; };
+		32A711421B90001300799861 /* WeiboListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A711411B90001300799861 /* WeiboListViewController.swift */; };
+		32DB48C01B9EB20E00F44B45 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32DB48BC1B9EB20E00F44B45 /* WeiboSDK.bundle */; settings = {ASSET_TAGS = (); }; };
+		32DB48C11B9EB23400F44B45 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB48B31B9EB20E00F44B45 /* libWeiboSDK.a */; };
+		32F529A41B96EEF700B3643E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F529A31B96EEF700B3643E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3203946B1B96C1C300DC6644 /* WeiboDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboDatabase.swift; sourceTree = "<group>"; };
 		32236EE81B902CCC0060E2B9 /* WeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCell.swift; sourceTree = "<group>"; };
+		32477D301B9E7B450005046C /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = Pods/WeiboSDK/libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		3261272B1B96FE44008CC93D /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = Pods/WeiboSDK/libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		326127301B970398008CC93D /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		326127321B9703A7008CC93D /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
 		329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboListViewController.xib; sourceTree = "<group>"; };
 		329A9D721B8EDC360015CB8B /* WeiboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiboCell.xib; sourceTree = "<group>"; };
 		329A9D771B8EE4C40015CB8B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -57,6 +66,22 @@
 		32A4ACB91B8DC3B20054881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A7113F1B8FFB9900799861 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		32A711411B90001300799861 /* WeiboListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboListViewController.swift; sourceTree = "<group>"; };
+		32DB48B31B9EB20E00F44B45 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = Libs/libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		32DB48B41B9EB20E00F44B45 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = Libs/libWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		32DB48B51B9EB20E00F44B45 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboGame.h"; path = "Libs/libWeiboSDK/WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		32DB48B61B9EB20E00F44B45 /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboShare.h"; path = "Libs/libWeiboSDK/WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		32DB48B71B9EB20E00F44B45 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "Libs/libWeiboSDK/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		32DB48B81B9EB20E00F44B45 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "Libs/libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		32DB48B91B9EB20E00F44B45 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = Libs/libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
+		32DB48BA1B9EB20E00F44B45 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBSDKCommentButton.h; path = Libs/libWeiboSDK/WBSDKCommentButton.h; sourceTree = "<group>"; };
+		32DB48BB1B9EB20E00F44B45 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBSDKRelationshipButton.h; path = Libs/libWeiboSDK/WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		32DB48BC1B9EB20E00F44B45 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = Libs/libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		32DB48BD1B9EB20E00F44B45 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = Libs/libWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
+		32DB48BE1B9EB20E00F44B45 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeiboUser.h; path = Libs/libWeiboSDK/WeiboUser.h; sourceTree = "<group>"; };
+		32F5299D1B96CE2C00B3643E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Libs/Realm/ios/swift-2.0/RealmSwift.framework"; sourceTree = "<group>"; };
+		32F5299F1B96EE0C00B3643E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		32F529A01B96EE0C00B3643E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		32F529A31B96EEF700B3643E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		AEE40E505B6123366E02216F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF016D0B31AD4CB88436C3CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D9D4BCBC799F412B30C6A6FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C690BD9E0EC2D302C798D1 /* Pods.framework in Frameworks */,
+				32DB48C11B9EB23400F44B45 /* libWeiboSDK.a in Frameworks */,
+				326127311B970398008CC93D /* Pods.framework in Frameworks */,
+				32F529A41B96EEF700B3643E /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +115,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3203946A1B96C19E00DC6644 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3203946B1B96C1C300DC6644 /* WeiboDatabase.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		3261272D1B970251008CC93D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				32DB48B31B9EB20E00F44B45 /* libWeiboSDK.a */,
+				32DB48B41B9EB20E00F44B45 /* WBHttpRequest.h */,
+				32DB48B51B9EB20E00F44B45 /* WBHttpRequest+WeiboGame.h */,
+				32DB48B61B9EB20E00F44B45 /* WBHttpRequest+WeiboShare.h */,
+				32DB48B71B9EB20E00F44B45 /* WBHttpRequest+WeiboToken.h */,
+				32DB48B81B9EB20E00F44B45 /* WBHttpRequest+WeiboUser.h */,
+				32DB48B91B9EB20E00F44B45 /* WBSDKBasicButton.h */,
+				32DB48BA1B9EB20E00F44B45 /* WBSDKCommentButton.h */,
+				32DB48BB1B9EB20E00F44B45 /* WBSDKRelationshipButton.h */,
+				32DB48BC1B9EB20E00F44B45 /* WeiboSDK.bundle */,
+				32DB48BD1B9EB20E00F44B45 /* WeiboSDK.h */,
+				32DB48BE1B9EB20E00F44B45 /* WeiboUser.h */,
+			);
+			name = Libs;
+			path = /Users/Cam/iOS/ChaosWeibo;
+			sourceTree = "<absolute>";
+		};
 		329A9D6D1B8EDB350015CB8B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +181,6 @@
 		329A9D711B8EDBCD0015CB8B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				32A7113F1B8FFB9900799861 /* Constants.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -150,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				329A9D771B8EE4C40015CB8B /* Header.h */,
+				32A7113F1B8FFB9900799861 /* Constants.swift */,
 				32A4ACA31B8DC3B10054881D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -158,6 +213,7 @@
 		32A4AC8B1B8DC3B10054881D = {
 			isa = PBXGroup;
 			children = (
+				3261272D1B970251008CC93D /* Libs */,
 				32A4AC961B8DC3B10054881D /* ChaosWeibo */,
 				32A4ACAB1B8DC3B20054881D /* ChaosWeiboTests */,
 				32A4ACB61B8DC3B20054881D /* ChaosWeiboUITests */,
@@ -180,6 +236,7 @@
 		32A4AC961B8DC3B10054881D /* ChaosWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				3203946A1B96C19E00DC6644 /* Database */,
 				32A4AC971B8DC3B10054881D /* AppDelegate.swift */,
 				329A9D711B8EDBCD0015CB8B /* App */,
 				329A9D761B8EE1590015CB8B /* Supporting Files */,
@@ -222,6 +279,14 @@
 		E3B47FB25A21E40BDE0CAC68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32477D301B9E7B450005046C /* WeiboSDK.bundle */,
+				326127321B9703A7008CC93D /* libWeiboSDK.a */,
+				326127301B970398008CC93D /* Pods.framework */,
+				3261272B1B96FE44008CC93D /* libWeiboSDK.a */,
+				32F529A31B96EEF700B3643E /* libsqlite3.dylib */,
+				32F5299F1B96EE0C00B3643E /* libsqlite3.0.tbd */,
+				32F529A01B96EE0C00B3643E /* libsqlite3.tbd */,
+				32F5299D1B96CE2C00B3643E /* RealmSwift.framework */,
 				AEE40E505B6123366E02216F /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -335,6 +400,7 @@
 			files = (
 				329A9D731B8EDC360015CB8B /* WeiboCell.xib in Resources */,
 				329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */,
+				32DB48C01B9EB20E00F44B45 /* WeiboSDK.bundle in Resources */,
 				32A4AC9F1B8DC3B10054881D /* Assets.xcassets in Resources */,
 				32A4AC9D1B8DC3B10054881D /* Main.storyboard in Resources */,
 			);
@@ -412,6 +478,7 @@
 				32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */,
 				32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */,
 				32A711421B90001300799861 /* WeiboListViewController.swift in Sources */,
+				3203946C1B96C1C300DC6644 /* WeiboDatabase.swift in Sources */,
 				32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */,
 				32A711401B8FFB9900799861 /* Constants.swift in Sources */,
 			);
@@ -464,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -509,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -547,9 +616,64 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9D4BCBC799F412B30C6A6FF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs/Realm/ios/swift-2.0",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/WeiboSDK\"",
+					"\"${PODS_ROOT}/Headers/Private\"/**",
+					"/Users/Cam/Desktop/weibo_ios_sdk-master/libWeiboSDK",
+					"/**",
+				);
 				INFOPLIST_FILE = ChaosWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WeiboSDK/libWeiboSDK",
+					"$(PROJECT_DIR)/libWeiboSDK",
+					"$(PROJECT_DIR)/Libs/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"WeiboSDK\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FCModel\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cam.zhu.ChaosWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ChaosWeibo/Header.h;
@@ -560,9 +684,65 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF016D0B31AD4CB88436C3CC /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEFINES_MODULE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs/Realm/ios/swift-2.0",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/WeiboSDK\"",
+					"\"${PODS_ROOT}/Headers/Private\"/**",
+					"/Users/Cam/Desktop/weibo_ios_sdk-master/libWeiboSDK",
+					"/**",
+				);
 				INFOPLIST_FILE = ChaosWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WeiboSDK/libWeiboSDK",
+					"$(PROJECT_DIR)/libWeiboSDK",
+					"$(PROJECT_DIR)/Libs/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+					"-l\"WeiboSDK\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FCModel\"",
+					"-framework",
+					"\"FMDB\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cam.zhu.ChaosWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = ChaosWeibo/Header.h;

@@ -7,6 +7,6 @@
 //
 
 import Foundation
-public var wbtoken: NSString?
-public var wbCurrentUserID:NSString?
-public var wbRefreshToken:NSString?
+public var wbtoken: String?
+public var wbCurrentUserID:String?
+public var wbRefreshToken:String?
