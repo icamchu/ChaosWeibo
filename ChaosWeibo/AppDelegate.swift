@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,WeiboSDKDelegate {
     }
     
     func didReceiveWeiboResponse(response: WBBaseResponse!) {
-        let authorizeResponse = (response as! WBAuthorizeResponse);
+        let authorizeResponse = response as! WBAuthorizeResponse;
         wbtoken = authorizeResponse.accessToken
         wbCurrentUserID = authorizeResponse.userID
         wbRefreshToken = authorizeResponse.refreshToken

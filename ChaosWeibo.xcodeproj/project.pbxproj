@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3203946C1B96C1C300DC6644 /* WeiboDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203946B1B96C1C300DC6644 /* WeiboDatabase.swift */; };
+		321D52751B9FFF9A006910A2 /* Weibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D52741B9FFF9A006910A2 /* Weibo.swift */; settings = {ASSET_TAGS = (); }; };
+		321D52771BA008F9006910A2 /* OriginalWeibo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D52761BA008F9006910A2 /* OriginalWeibo.swift */; settings = {ASSET_TAGS = (); }; };
 		32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32236EE81B902CCC0060E2B9 /* WeiboCell.swift */; };
 		326127311B970398008CC93D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326127301B970398008CC93D /* Pods.framework */; };
 		329A9D6C1B8EDA0C0015CB8B /* WeiboListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329A9D6B1B8EDA0C0015CB8B /* WeiboListViewController.xib */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		3203946B1B96C1C300DC6644 /* WeiboDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboDatabase.swift; sourceTree = "<group>"; };
+		321D52741B9FFF9A006910A2 /* Weibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weibo.swift; sourceTree = "<group>"; };
+		321D52761BA008F9006910A2 /* OriginalWeibo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalWeibo.swift; sourceTree = "<group>"; };
 		32236EE81B902CCC0060E2B9 /* WeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboCell.swift; sourceTree = "<group>"; };
 		32477D301B9E7B450005046C /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = Pods/WeiboSDK/libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
 		3261272B1B96FE44008CC93D /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = Pods/WeiboSDK/libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		329A9D6E1B8EDB3F0015CB8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				321D52741B9FFF9A006910A2 /* Weibo.swift */,
+				321D52761BA008F9006910A2 /* OriginalWeibo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -476,8 +482,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32236EE91B902CCC0060E2B9 /* WeiboCell.swift in Sources */,
+				321D52771BA008F9006910A2 /* OriginalWeibo.swift in Sources */,
 				32A4AC9A1B8DC3B10054881D /* ViewController.swift in Sources */,
 				32A711421B90001300799861 /* WeiboListViewController.swift in Sources */,
+				321D52751B9FFF9A006910A2 /* Weibo.swift in Sources */,
 				3203946C1B96C1C300DC6644 /* WeiboDatabase.swift in Sources */,
 				32A4AC981B8DC3B10054881D /* AppDelegate.swift in Sources */,
 				32A711401B8FFB9900799861 /* Constants.swift in Sources */,
@@ -619,6 +627,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,6 +643,7 @@
 					"/**",
 				);
 				INFOPLIST_FILE = ChaosWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -644,7 +654,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"WeiboSDK\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -687,6 +696,7 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,6 +712,7 @@
 					"/**",
 				);
 				INFOPLIST_FILE = ChaosWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
